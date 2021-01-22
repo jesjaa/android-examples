@@ -37,6 +37,7 @@
         app:layout_constraintTop_toBottomOf="@id/customCircle" />
 
     <fi.jesej.customviewapp.CustomTextGroup
+        android:id="@+id/customTextGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:customIcon="@drawable/ic_baseline_accessible_24"
@@ -45,5 +46,33 @@
         app:layout_constraintTop_toBottomOf="@id/tvCompoundViewGroup"
         app:placeholder="Lorem ipsum"
         app:text="Tässä tämmöinen on" />
+
+    <TextView
+        android:id="@+id/tvCustomLayout"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tämä on custom layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customTextGroup" />
+
+
+    <fi.jesej.customviewapp.CustomLayout
+        android:id="@+id/customLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCustomLayout">
+
+        <ImageView
+            android:src="@drawable/ic_baseline_accessible_24"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    </fi.jesej.customviewapp.CustomLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
