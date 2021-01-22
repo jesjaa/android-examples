@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <fi.jesej.customviewapp.CustomCircle
+        android:id="@+id/customCircle"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:customColor="@color/black"
@@ -25,5 +26,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCustomView" />
 
+    <TextView
+        android:id="@+id/tvCompoundViewGroup"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tämä on compound view group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customCircle" />
+
+    <fi.jesej.customviewapp.CustomTextGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:customIcon="@drawable/ic_baseline_accessible_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCompoundViewGroup"
+        app:placeholder="Lorem ipsum"
+        app:text="Tässä tämmöinen on" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

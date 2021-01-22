@@ -8,8 +8,10 @@
         <attr name="customColor" />
     </declare-styleable>
 
-    <declare-styleable name="CustomCircle2">
-        <attr name="customColor" />
+    <declare-styleable name="CustomTextGroup">
+        <attr name="text" format="string" />
+        <attr name="customIcon" format="integer" />
+        <attr name="placeholder" format="string" />
     </declare-styleable>
 
 </resources>
