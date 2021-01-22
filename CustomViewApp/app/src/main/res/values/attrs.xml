@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common attrs -->
+    <attr name="customColor" format="color" />
+
+    <declare-styleable name="CustomCircle">
+        <attr name="customColor" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircle2">
+        <attr name="customColor" />
+    </declare-styleable>
+
+</resources>
